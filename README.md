@@ -1,4 +1,4 @@
-# Regression Model for Predicting Above Average Exam Performance
+# Classification Model for Predicting Above Average Exam Performance
 
 ## Introduction
 
