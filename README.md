@@ -1,4 +1,4 @@
-# Classification Model for Predicting Above Average Exam Performance
+# Statistical Model for Predicting Above Average Academic Performance
 
 ## Introduction
 
