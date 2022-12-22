@@ -153,7 +153,7 @@ The logistic regression model is used to predict the outcome of a binary outcome
 
 **Reference Categories:** Note that when interpreting coefficient values for dummy variables, odds of above average performance is relative to the reference class (class that is omitted from report). For example, for the logistic regression model for math (logit_math), the predicted log odds of females performing above average in math is 0.87 lower than males; this was found to be statistically significant from 0 at a 95% confidence level.
 
-<img width="923" alt="Screen Shot 2022-12-21 at 9 01 08 PM" src="https://user-images.githubusercontent.com/106416383/209038715-7a2a2ada-6d5c-4037-a131-86d498a6d2b3.png">
+<img width="924" alt="Screen Shot 2022-12-21 at 9 07 55 PM" src="https://user-images.githubusercontent.com/106416383/209039494-98f1ca4d-e6ce-4080-b919-7f1b4c0ac1bb.png">
 
 
 **Significance:** Results are considered statistically significant from 0 if the corresponding p-value (P>|z|) is less than 0.05.
