@@ -2,34 +2,41 @@
 
 ## Introduction
 
-Repository for binary logistic classification projet in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. 
+Repository for binary logistic classification project as a multivariate apporach in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. 
 
 Significance of each factor in predicting above average academic performance of students will be evaluated at a confidence level of 95% with a 0.05 (alpha) significance threshold for each of the three logistic model in measuring above average performance. 
 
 This analysis was completed in `Python Jupyter Notebook` application using Anaconda Distribution.
 
-<br>
 
 ## Requirements for Execution
 
 The file is to be executed using a Python Notebook application such as Jupyter Notebook via Anaconda, or Google Colab Notebook.
 
-#### Dataset 
+### Dataset 
 Dataset: Student Performance in Exams
 
 Filename: `exams.csv`
 
-The project requires the import of a stimulated dataset of  `Student Performance in Exams` and has been provided in a `csv` format listed as `exams.csv` (Chauhan, 2022). Alternatively, as this dataset was extracted from an online data repository platform, this file can be accessed and downloaded directly from Kaggle, an online data repository. Users can use this [link](https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams) to be redirected to the webpage (note: will need to register for an account).
+The project requires the import of a stimulated dataset of  `Student Performance in Exams` and has been provided in a `csv` format listed as `exams.csv` (Chauhan, 2022). Alternatively, this file can be obtained and downloaded directly the online data repository from Kaggle. Users can use this [link](https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams) to be redirected to the webpage (note: will need to register for an account).
 
-The dataset consists of 1000 students and 8 features including the following:
+The dataset consists of 1000 students and 8 features. For the purpose of this study, the project has divided five categorical features as a measure of demographic or socioeconomic factor on academic performance, using exam scores in math, reading and writing as the label.
+
+Demographic factors:
 - **Gender** - Male, Female (categorical)
 - **Race/Ethnicity** - Student race/ethnicity classified based on groups (A-E) (categorical)
+
+Socioeconomic factors:
 - **Parental Level of Education** - Some high school, high school, some college, associate's degree, bachelor, master's (categorical)
 - **Lunch** - Standard, Free/Reduced (categorical)
 - **Test Preparation Course** - Whether the student has completed a course in preparation for the examination (categorical)
+
+Target:
 - **Math, Reading, Writing Scores** - marks secured by students in each of the subject (quantitative)
 
-#### Importing the required packages 
+<br>
+
+### Importing the required packages 
 
  Support from `Anaconda Distribution` featuring a compilation of open-source data science and machine learning packages was used in this analysis.
 
@@ -60,8 +67,9 @@ In order to display figures created, the following command is to be executed at 
 ```python
 %matplotlib inline
 ```
+<br>
 
-#### Reading the file
+### Reading the file
 
 To run the `ipynb` file, the dataset should be located in the same directory as code itself and imported into a`dataframe` object as a `.csv` format as provided. This is to be executed using `pd.read_csv()` function by passing a string argument of the file name including its extension:
 
@@ -79,7 +87,7 @@ The analysis of `Student Performance in Exams` is divided into two main componen
 1. Exploratory Data Analysis (EDA)
 2. Fitting the logistic regression model to the data
 
-#### Part 1: Exploratory Data Analysis (EDA)
+### Part 1: Exploratory Data Analysis (EDA)
 
 **Data Cleaning and Processing**
 - As part of the EDA and data cleaning process, the program will rename column names to yield more appropriate syntax for further data manipulation and output the adjusted dataset to be used for the remainder of the analysis.
@@ -101,25 +109,41 @@ The analysis of `Student Performance in Exams` is divided into two main componen
 
 - Additionally, a correlation heat map of exam scores is also displayed to illustrate how a student's performance in one subject is related to the performance in another subject
 
-#### Part 2: Fitting the logistic regression to the data
+<br>
+
+### Part 2: Fitting the logistic regression to the data
 
 **Testing for multicollinearity**
-- As the statistical model will involve more than two independent variables, the program will output a correlation heat map of to identify any covariates that are highly correlated among predictors in the dataset. 
 
-- This is accomplished by recoding each class in a category to numeric values and based on the results of the correlation values, high covariates were to be excluded if present.
+As the statistical model will involve more than two independent variables, the program will output a correlation heat map of to identify any covariates that are highly correlated among predictors in the dataset. High covariates were to be excluded if present.
+
+<img width="568" alt="Screen Shot 2022-12-21 at 8 45 13 PM" src="https://user-images.githubusercontent.com/106416383/209036685-da377c72-e1cb-4009-aeb2-4d684c6d5298.png">
+
+
 
 **Regression model**
-- Regression model was completed using  the `statsmodel` library.
 
-- Three separate logistic model are fitted in this analysis for each subject in determining which factors contribute/associated with above average student performance in math, reading and writing as the target variable in each of the separate models.
+Classification model was completed using  the `statsmodel` library.
 
-- To predict above average student performance, marks secured by each of the student in the dataset were recoded as 0 - for below average performance, or 1 - for above average performance in the dataset. This is based on whether the score is above or below the overall average in math, reading, and writing.
+Three separate logistic model are fitted in this analysis for each subject in determining which factors contribute/associated with above average student performance in math, reading and writing as the target variable in each of the separate models.
 
-- Dummy variables are created for each class in a category in order to run the regression.
+To predict above average student performance, marks secured by each of the student in the dataset were recoded as:
+- 0: for below average performance, OR
+- 1: for above average performance in the dataset. 
 
-- During the fitting of the model, the dataset is separated to a feature matrix containing the predictors, and a target array contain the column of the outcome variable (math, reading, or writing). 
+This is based on whether the score is above or below the overall average in math, reading, and writing.
 
-- Summary of the Regression results is outputted for each model once fitted.
+<img width="916" alt="Screen Shot 2022-12-21 at 8 45 45 PM" src="https://user-images.githubusercontent.com/106416383/209036736-e6194b82-1c40-4185-9575-770f3b075105.png">
+
+Dummy variables are created for each class in a category in order to run the model.
+
+<img width="1088" alt="Screen Shot 2022-12-21 at 8 50 24 PM" src="https://user-images.githubusercontent.com/106416383/209037325-4a82c84d-5a17-48f5-9414-2260e187c143.png">
+
+During the fitting of the model, the dataset is separated to a feature matrix containing the predictors, and a target array contain the column of the outcome variable (math, reading, or writing). 
+
+Summary of the Regression results is outputted for each model once fitted.
+
+<br>
 
 **Interpreting the regression results**
 
@@ -132,6 +156,7 @@ The analysis of `Student Performance in Exams` is divided into two main componen
 - Results are considered statistically signifiant from 0 if the corresponding p-value ($P>|z|$) is less than 0.05.
 
 - The constant is interpreted as the predicted log odds of a student performing above average in math, reading or writing, when all predictors are at reference level (these are the classes for each of the categorical variable/factors that were omitted).
+
 <br>
 
 ## Running the Program
@@ -152,6 +177,5 @@ The analysis of `Student Performance in Exams` is divided into two main componen
 
 Dataset:
 
-```
 Chauhan, A. (2022, August). Students Performance in Exams. Retrieved October 23, 2022 from https://www.kaggle.com/datasets/whenamancodes/students-performance-in-exams. 
-```
+
