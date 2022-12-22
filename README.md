@@ -1,8 +1,12 @@
-# Predicting Above Average Academic Performance
+# Predicting Academic Performance
 
 ## Introduction
 
-Repository for binary logistic classification projet in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. Significance of each factor in predicting above average academic performance of students will be evaluated at a confidence level of 95% with a 0.05 (alpha) significance threshold for each of the three logistic model in measuring above average performance. This analysis was completed in `Python Jupyter Notebook` application using Anaconda Distribution.
+Repository for binary logistic classification projet in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. 
+
+Significance of each factor in predicting above average academic performance of students will be evaluated at a confidence level of 95% with a 0.05 (alpha) significance threshold for each of the three logistic model in measuring above average performance. 
+
+This analysis was completed in `Python Jupyter Notebook` application using Anaconda Distribution.
 
 <br>
 
