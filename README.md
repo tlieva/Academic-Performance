@@ -147,13 +147,16 @@ Summary of the Regression results is outputted for each model once fitted.
 
 **Interpreting the regression results**
 
-- The logistic regression model is used to predict the outcome of a binary outcome  (0 - below average, 1 - above average. Therefore, for each of the regression model, it can be used to estimate the probability of event 1 occurring based on predictors (i.e., above average student performance in math, reading or writing)
+The logistic regression model is used to predict the outcome of a binary outcome  (0 - below average, 1 - above average. Therefore, for each of the regression model, it can be used to estimate the probability of event 1 occurring based on predictors (i.e., above average student performance in math, reading or writing)
 
-- This means that every unit increase in the predictor variable is associated with an increase or decrease (depending on the sign of the estimated logistic coefficient for the given variable) of the log odds of the the student performing above average in math, reading, or writing, by the value of the coefficient. 
+This means that every unit increase in the predictor variable is associated with an increase or decrease (depending on the sign of the estimated logistic coefficient for the given variable) of the log odds of the the student performing above average in math, reading, or writing, by the value of the coefficient. 
 
-- Note that when interpreting coefficient values for dummy variables, odds of above average performance is relative to the reference class (class that is omitted from report). For example, for the logistic regression model for math (logit_math), the predicted log odds of females performing above average in math is 0.87 lower than males; this was found to be statistically significant from 0 at a 95% confidence level.
+Note that when interpreting coefficient values for dummy variables, odds of above average performance is relative to the reference class (class that is omitted from report). For example, for the logistic regression model for math (logit_math), the predicted log odds of females performing above average in math is 0.87 lower than males; this was found to be statistically significant from 0 at a 95% confidence level.
 
-- Results are considered statistically signifiant from 0 if the corresponding p-value ($P>|z|$) is less than 0.05.
+<img width="923" alt="Screen Shot 2022-12-21 at 9 01 08 PM" src="https://user-images.githubusercontent.com/106416383/209038715-7a2a2ada-6d5c-4037-a131-86d498a6d2b3.png">
+
+
+- Results are considered statistically signifiant from 0 if the corresponding p-value (P>|z|) is less than 0.05.
 
 - The constant is interpreted as the predicted log odds of a student performing above average in math, reading or writing, when all predictors are at reference level (these are the classes for each of the categorical variable/factors that were omitted).
 
