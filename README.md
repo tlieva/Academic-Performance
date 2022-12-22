@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The purpose of this project is to build a statistic model based on a binary logistic regression algorithm for predicting above average academic performance by students across three different metrics: math, reading, and writing. Results of the binary classification algorithm will be used to determine which major factors contribute/ is associated with above average exam performance based on estimations of the logistic regression parameters (coefficients) of each factor. Significance of each factor in predicting above average academic performance of students will be evaluated at a confidence level of 95% with a 0.05 significance threshold for each of the three logistic model in measuring above average performance. This analysis was completed in `Python Jupyter Notebook` application using Anaconda Distribution.
+Repository for binary logistic classification projet in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. Significance of each factor in predicting above average academic performance of students will be evaluated at a confidence level of 95% with a 0.05 (alpha) significance threshold for each of the three logistic model in measuring above average performance. This analysis was completed in `Python Jupyter Notebook` application using Anaconda Distribution.
 
 <br>
 
