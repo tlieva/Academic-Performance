@@ -1,4 +1,4 @@
-# Statistical Model for Predicting Above Average Academic Performance
+# Predicting Above Average Academic Performance
 
 ## Introduction
 
