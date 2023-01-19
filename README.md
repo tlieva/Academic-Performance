@@ -1,5 +1,7 @@
 # Predicting Academic Performance
 
+Repository for independent machine learning project completed for academic purposes.
+
 ## Introduction
 
 Repository for binary logistic classification project as a multivariate apporach in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. 
