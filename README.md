@@ -1,4 +1,4 @@
-# Statistically Modelling of Academic Performance
+# Statistical Modelling of Academic Performance
 
 Repository for independent machine learning project completed for academic purposes.
 
