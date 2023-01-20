@@ -2,6 +2,8 @@
 
 Repository for independent machine learning project completed for academic purposes.
 
+[Python Code](https://github.com/tlieva/Academic-Performance/blob/a3552d376e52d9fe3b9d4cc00de17cc9eac9310a/Classification-StudentExams.ipynb)
+
 ## Introduction
 
 Repository for binary logistic classification project as a multivariate apporach in statistically modelling the relationship between above average academic performance with respect to measures of demographic and socioeconomic factors for each academic metrics: math, reading, and writing. 
