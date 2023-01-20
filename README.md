@@ -1,8 +1,9 @@
 # Statistical Modelling of Academic Performance
 
-Repository for independent machine learning project completed for academic purposes.
+Repository for independent python project completed for academic purposes.
 
-[Python Code](https://github.com/tlieva/Academic-Performance/blob/a3552d376e52d9fe3b9d4cc00de17cc9eac9310a/Classification-StudentExams.ipynb)
+File(s):
+- [Python Code](https://github.com/tlieva/Academic-Performance/blob/a3552d376e52d9fe3b9d4cc00de17cc9eac9310a/Classification-StudentExams.ipynb)
 
 ## Introduction
 
