@@ -1,4 +1,4 @@
-# Statistical Modelling of Academic Performance
+# Predicting Academic Performance
 
 Repository for independent python project completed for academic purposes.
 
